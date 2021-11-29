@@ -67,7 +67,7 @@
       }
     ]
   },
-  "description": "This is a PI-Hole dashboard when using the https://github.com/eko/pihole-exporter Prometheus exporter",
+  "description": "This is a PI-Hole dashboard when using the https://github.com/jovalle/pihole-exporter Prometheus exporter",
   "editable": true,
   "gnetId": 10176,
   "graphTooltip": 0,

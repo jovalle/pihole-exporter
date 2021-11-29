@@ -1,8 +1,8 @@
 # PI-Hole Prometheus Exporter
 
-![Build/Push (master)](https://github.com/eko/pihole-exporter/workflows/Build/Push%20(master)/badge.svg)
-[![GoDoc](https://godoc.org/github.com/eko/pihole-exporter?status.png)](https://godoc.org/github.com/eko/pihole-exporter)
-[![GoReportCard](https://goreportcard.com/badge/github.com/eko/pihole-exporter)](https://goreportcard.com/report/github.com/eko/pihole-exporter)
+![Build/Push (master)](https://github.com/jovalle/pihole-exporter/workflows/Build/Push%20(master)/badge.svg)
+[![GoDoc](https://godoc.org/github.com/jovalle/pihole-exporter?status.png)](https://godoc.org/github.com/jovalle/pihole-exporter)
+[![GoReportCard](https://goreportcard.com/badge/github.com/jovalle/pihole-exporter)](https://goreportcard.com/report/github.com/jovalle/pihole-exporter)
 
 This is a Prometheus exporter for [PI-Hole](https://pi-hole.net/)'s Raspberry PI ad blocker.
 
@@ -21,22 +21,22 @@ Grafana dashboard is [available here](https://grafana.com/dashboards/10176) on t
 You can download the latest version of the binary built for your architecture here:
 
 * Architecture **i386** [
-    [Linux](https://github.com/eko/pihole-exporter/releases/latest/download/pihole_exporter-linux-386) /
-    [Windows](https://github.com/eko/pihole-exporter/releases/latest/download/pihole_exporter-windows-386.exe)
+    [Linux](https://github.com/jovalle/pihole-exporter/releases/latest/download/pihole_exporter-linux-386) /
+    [Windows](https://github.com/jovalle/pihole-exporter/releases/latest/download/pihole_exporter-windows-386.exe)
 ]
 * Architecture **amd64** [
-    [Darwin](https://github.com/eko/pihole-exporter/releases/latest/download/pihole_exporter-darwin-amd64) /
-    [Linux](https://github.com/eko/pihole-exporter/releases/latest/download/pihole_exporter-linux-amd64) /
-    [Windows](https://github.com/eko/pihole-exporter/releases/latest/download/pihole_exporter-windows-amd64.exe)
+    [Darwin](https://github.com/jovalle/pihole-exporter/releases/latest/download/pihole_exporter-darwin-amd64) /
+    [Linux](https://github.com/jovalle/pihole-exporter/releases/latest/download/pihole_exporter-linux-amd64) /
+    [Windows](https://github.com/jovalle/pihole-exporter/releases/latest/download/pihole_exporter-windows-amd64.exe)
 ]
 * Architecture **arm** [
-    [Darwin](https://github.com/eko/pihole-exporter/releases/latest/download/pihole_exporter-darwin-arm64) /
-    [Linux](https://github.com/eko/pihole-exporter/releases/latest/download/pihole_exporter-linux-arm)
+    [Darwin](https://github.com/jovalle/pihole-exporter/releases/latest/download/pihole_exporter-darwin-arm64) /
+    [Linux](https://github.com/jovalle/pihole-exporter/releases/latest/download/pihole_exporter-linux-arm)
 ]
 
 ### Using Docker
 
-The exporter is also available as a [Docker image](https://hub.docker.com/r/ekofr/pihole-exporter).
+The exporter is also available as a [Docker image](https://hub.docker.com/r/jovalle/pihole-exporter).
 You can run it using the following example and pass configuration environment variables:
 
 ```
@@ -46,7 +46,7 @@ $ docker run \
   -e 'INTERVAL=30s' \
   -e 'PORT=9617' \
   -p 9617:9617 \
-  ekofr/pihole-exporter:latest
+  jovalle/pihole-exporter:latest
 ```
 
 Or use PiHole's `WEBPASSWORD` as an API token instead of the password
@@ -58,7 +58,7 @@ $ docker run \
   -e "PIHOLE_API_TOKEN=$API_TOKEN" \
   -e 'INTERVAL=30s' \
   -e 'PORT=9617' \
-  ekofr/pihole-exporter:latest
+  jovalle/pihole-exporter:latest
 ```
 
 If you are running pi-hole behind https, you must both set the `PIHOLE_PROTOCOL` environment variable
@@ -73,16 +73,16 @@ $ docker run \
   -e 'PORT=9617' \
   -v '/etc/ssl/certs:/etc/ssl/certs:ro' \
   -p 9617:9617 \
-  ekofr/pihole-exporter:latest
+  jovalle/pihole-exporter:latest
 ```
 
 ### From sources
 
 Optionally, you can download and build it from the sources. You have to retrieve the project sources by using one of the following way:
 ```bash
-$ go get -u github.com/eko/pihole-exporter
+$ go get -u github.com/jovalle/pihole-exporter
 # or
-$ git clone https://github.com/eko/pihole-exporter.git
+$ git clone https://github.com/jovalle/pihole-exporter.git
 ```
 
 Install the needed vendors:

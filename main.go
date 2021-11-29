@@ -3,10 +3,10 @@ package main
 import (
 	"fmt"
 
-	"github.com/eko/pihole-exporter/config"
-	"github.com/eko/pihole-exporter/internal/metrics"
-	"github.com/eko/pihole-exporter/internal/pihole"
-	"github.com/eko/pihole-exporter/internal/server"
+	"github.com/jovalle/pihole-exporter/config"
+	"github.com/jovalle/pihole-exporter/internal/metrics"
+	"github.com/jovalle/pihole-exporter/internal/pihole"
+	"github.com/jovalle/pihole-exporter/internal/server"
 	"github.com/xonvanetta/shutdown/pkg/shutdown"
 )
 

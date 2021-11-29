@@ -12,8 +12,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/eko/pihole-exporter/config"
-	"github.com/eko/pihole-exporter/internal/metrics"
+	"github.com/jovalle/pihole-exporter/config"
+	"github.com/jovalle/pihole-exporter/internal/metrics"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 )
 

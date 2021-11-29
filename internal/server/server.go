@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/eko/pihole-exporter/internal/pihole"
+	"github.com/jovalle/pihole-exporter/internal/pihole"
 	"golang.org/x/net/context"
 )
 
