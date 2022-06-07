@@ -5,7 +5,7 @@ go 1.17
 require (
 	github.com/heetch/confita v0.10.0
 	github.com/prometheus/client_golang v1.11.0
-	github.com/stretchr/testify v1.7.0
+	github.com/stretchr/testify v1.7.2
 	github.com/xonvanetta/shutdown v0.0.3
 	golang.org/x/net v0.0.0-20200625001655-4c5254603344
 )
@@ -23,5 +23,5 @@ require (
 	github.com/prometheus/procfs v0.6.0 // indirect
 	golang.org/x/sys v0.0.0-20210603081109-ebe580a85c40 // indirect
 	google.golang.org/protobuf v1.26.0-rc.1 // indirect
-	gopkg.in/yaml.v3 v3.0.0-20200313102051-9f266ea9e77c // indirect
+	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
